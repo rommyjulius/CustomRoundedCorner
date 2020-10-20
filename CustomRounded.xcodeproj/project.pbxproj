@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F01788D2253E98400055D864 /* CustomRounded.h in Headers */ = {isa = PBXBuildFile; fileRef = F01788D0253E98400055D864 /* CustomRounded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F01788DA253E984C0055D864 /* CustomRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01788D9253E984C0055D864 /* CustomRounded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F01788CD253E98400055D864 /* CustomRounded.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomRounded.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01788D0253E98400055D864 /* CustomRounded.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomRounded.h; sourceTree = "<group>"; };
 		F01788D1253E98400055D864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F01788D9253E984C0055D864 /* CustomRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRounded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				F01788D0253E98400055D864 /* CustomRounded.h */,
 				F01788D1253E98400055D864 /* Info.plist */,
+				F01788D9253E984C0055D864 /* CustomRounded.swift */,
 			);
 			path = CustomRounded;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					F01788CC253E98400055D864 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F01788DA253E984C0055D864 /* CustomRounded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		F01788D6253E98400055D864 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = H79LVA7HS2;
@@ -269,6 +275,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CustomRounded/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rommy.notificationDemo.CustomRounded;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +293,7 @@
 		F01788D7253E98400055D864 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = H79LVA7HS2;
@@ -293,6 +302,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CustomRounded/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
